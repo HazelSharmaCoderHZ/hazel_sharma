@@ -3,6 +3,14 @@ import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
+const particles = Array.from({ length: 8 }, (_, i) => ({
+  id: i,
+  duration: 5 + (i % 4),
+  delay: i * 0.6,
+  left: `${12 + ((i * 11) % 76)}%`,
+  top: `${54 + ((i * 7) % 34)}%`,
+}));
+
 const Hero = () => {
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,33 +54,33 @@ const Hero = () => {
 
       {/* Gradient orbs */}
       <motion.div
-        className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/8 rounded-full blur-[120px]"
-        animate={{ scale: [1, 1.2, 1], x: [0, 30, 0] }}
-        transition={{ duration: 8, repeat: Infinity }}
+        className="absolute top-1/4 -left-28 w-72 h-72 bg-primary/6 rounded-full blur-[80px]"
+        animate={{ scale: [1, 1.08, 1], x: [0, 12, 0] }}
+        transition={{ duration: 14, repeat: Infinity }}
       />
       <motion.div
-        className="absolute bottom-1/4 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-[120px]"
-        animate={{ scale: [1.2, 1, 1.2], x: [0, -30, 0] }}
-        transition={{ duration: 8, repeat: Infinity, delay: 4 }}
+        className="absolute bottom-1/4 -right-28 w-72 h-72 bg-primary/4 rounded-full blur-[80px]"
+        animate={{ scale: [1.08, 1, 1.08], x: [0, -12, 0] }}
+        transition={{ duration: 14, repeat: Infinity, delay: 5 }}
       />
 
       {/* Floating particles */}
-      {[...Array(20)].map((_, i) => (
+      {particles.map((particle) => (
         <motion.div
-          key={i}
+          key={particle.id}
           className="absolute w-px h-px bg-primary/40 rounded-full"
           animate={{
-            y: [0, -150, 0],
+            y: [0, -90, 0],
             opacity: [0, 1, 0],
           }}
           transition={{
-            duration: 3 + Math.random() * 4,
+            duration: particle.duration,
             repeat: Infinity,
-            delay: Math.random() * 5,
+            delay: particle.delay,
           }}
           style={{
-            left: `${Math.random() * 100}%`,
-            top: `${50 + Math.random() * 50}%`,
+            left: particle.left,
+            top: particle.top,
           }}
         />
       ))}

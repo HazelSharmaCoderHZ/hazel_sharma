@@ -35,6 +35,8 @@ const AboutMe = () => {
                 <img
                   src="/lovable-uploads/685f96cd-72fb-40b4-94d0-7295e37e0628.png"
                   alt="Hazel Sharma"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </motion.div>

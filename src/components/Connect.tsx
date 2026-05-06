@@ -14,9 +14,9 @@ const Connect = () => {
       <div className="absolute inset-0 grid-bg opacity-20" />
       
       <motion.div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[200px]"
-        animate={{ scale: [1, 1.2, 1] }}
-        transition={{ duration: 10, repeat: Infinity }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[420px] bg-primary/4 rounded-full blur-[100px]"
+        animate={{ scale: [1, 1.05, 1] }}
+        transition={{ duration: 18, repeat: Infinity }}
       />
 
       <div className="container mx-auto px-6 relative z-10">

@@ -112,31 +112,31 @@
 
   .glass {
     background: hsl(var(--card) / 0.6);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border: 1px solid hsl(var(--border) / 0.5);
   }
 
   .glass-strong {
     background: hsl(var(--card) / 0.8);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border: 1px solid hsl(var(--border) / 0.3);
   }
 
   .glow-primary {
-    box-shadow: 0 0 20px hsl(var(--primary) / 0.15),
-                0 0 60px hsl(var(--primary) / 0.05);
+    box-shadow: 0 0 14px hsl(var(--primary) / 0.12),
+                0 0 36px hsl(var(--primary) / 0.04);
   }
 
   .glow-primary-strong {
-    box-shadow: 0 0 30px hsl(var(--primary) / 0.3),
-                0 0 80px hsl(var(--primary) / 0.1);
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.22),
+                0 0 52px hsl(var(--primary) / 0.08);
   }
 
   .text-glow {
-    text-shadow: 0 0 40px hsl(var(--primary) / 0.5),
-                 0 0 80px hsl(var(--primary) / 0.2);
+    text-shadow: 0 0 24px hsl(var(--primary) / 0.4),
+                 0 0 48px hsl(var(--primary) / 0.16);
   }
 
   .gradient-text {

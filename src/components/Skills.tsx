@@ -86,9 +86,9 @@ const Skills = () => {
 
       {/* Glow orb */}
       <motion.div
-        className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[150px]"
-        animate={{ scale: [1, 1.2, 1] }}
-        transition={{ duration: 10, repeat: Infinity }}
+        className="absolute top-0 right-0 w-[360px] h-[360px] bg-primary/4 rounded-full blur-[90px]"
+        animate={{ scale: [1, 1.06, 1] }}
+        transition={{ duration: 18, repeat: Infinity }}
       />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -137,6 +137,8 @@ const Skills = () => {
                     <img
                       src={skill.logo}
                       alt={skill.name}
+                      loading="lazy"
+                      decoding="async"
                       className="w-5 h-5 group-hover:scale-110 transition-transform"
                     />
                     <span className="text-sm text-foreground font-medium">{skill.name}</span>
