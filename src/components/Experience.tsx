@@ -7,10 +7,27 @@ const Experience = () => {
     {
       title: "Frontend Developer Intern",
       company: "Aarvasa",
-      period: "January 2026 - Present",
+      period: "January 2026 - May 2026",
       location: "India",
       description: "Working as a frontend developer, building responsive and user-friendly web applications.",
-      skills: ["React", "TypeScript", "Tailwind CSS"],
+      skills: [
+  "React",
+  "TypeScript",
+  "Tailwind CSS",
+  "JavaScript (ES6+)",
+  "Responsive Web Design",
+  "REST API Integration",
+  "Git & GitHub",
+  "Component-Based Architecture",
+  "State Management",
+  "UI/UX Optimization",
+  "Frontend Debugging",
+  "Vite",
+  "Performance Optimization",
+  "Reusable Components",
+  "Figma to Code",
+  "Cross-Browser Compatibility"
+]
     },
   ];
 
