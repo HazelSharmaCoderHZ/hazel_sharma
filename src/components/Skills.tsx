@@ -68,6 +68,8 @@ const Skills = () => {
         { name: "LLaMA 3 (8B)", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
         { name: "Prompt Engineering", logo: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" },
         { name: "Context-Aware Systems", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+        { name: "LLM Integration", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg" },
+        { name: "Gemini API", logo: "https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735303ff6292a690123.svg" },
       ],
     },
   ];
