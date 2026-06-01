@@ -10,7 +10,7 @@ const Education = () => {
       degree: "Btech in Information Technology",
       location: "Vellore, India",
       description: "Currently pursuing Bachelor of Technology with focus on Information Technology and software development.",
-      gpa: "CGPA: 9.13",
+      gpa: "CGPA: 9.17",
     },
     {
       year: "2014 - 2024",
