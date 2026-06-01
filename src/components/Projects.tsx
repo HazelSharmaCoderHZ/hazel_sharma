@@ -43,7 +43,7 @@ const Projects = () => {
     {
       title: "Code Golf",
       description: "A PR website built for the college club IEEE WIE, showcasing events and community engagement",
-      image: "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=600&h=400&fit=crop",
+      image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=600&h=400&fit=crop",
       tech: ["TypeScript", "Tailwind", "Next.js"],
       github: "https://github.com/HazelSharmaCoderHZ/Code-Golf",
       demo: "https://codegolfwie.vercel.app/",
