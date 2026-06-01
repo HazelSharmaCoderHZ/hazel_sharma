@@ -64,6 +64,7 @@ const Skills = () => {
         { name: "Responsive Design", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
         { name: "REST APIs", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
         { name: "Authentication", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jwt/jwt-original.svg" },
+        // replaced broken jwt icon
         { name: "API Integration", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
         { name: "JSON", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" },
         { name: "Session Management", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
