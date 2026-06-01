@@ -82,7 +82,6 @@ const Skills = () => {
         { name: "Semantic Search", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" },
         { name: "FAISS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
         { name: "Sentence Transformers", logo: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
-        { name: "Conversational AI", logo: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" },
         { name: "Embeddings", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
         { name: "GROQ API", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
       ],
