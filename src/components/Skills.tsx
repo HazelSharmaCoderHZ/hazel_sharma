@@ -43,6 +43,9 @@ const Skills = () => {
         { name: "Postman", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
         { name: "Vite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" },
         { name: "Figma", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+        { name: "Streamlit", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" },
+        { name: "MongoDB Atlas", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+        { name: "FAISS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
       ],
     },
     {
@@ -70,15 +73,23 @@ const Skills = () => {
         { name: "Context-Aware Systems", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
         { name: "LLM Integration", logo: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" },
         { name: "Gemini API", logo: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" },
+        { name: "RAG", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+        { name: "Semantic Search", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" },
+        { name: "FAISS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+        { name: "Sentence Transformers", logo: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
+        { name: "Conversational AI", logo: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" },
+        { name: "Embeddings", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+        { name: "GROQ API", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
       ],
     },
   ];
 
   const softSkills = [
-    "Web Development",
+    "AI Application Engineering",
     "Full-Stack Development",
-    "Frontend Developer",
-    "Competitive Coding",
+    "RAG & LLM Systems",
+    "Frontend Development",
+    "Competitive Programming",
     "Public Speaking",
   ];
 

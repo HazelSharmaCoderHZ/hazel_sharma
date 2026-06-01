@@ -1,26 +1,35 @@
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Heart, Trophy, Activity, Code2 } from "lucide-react";
+import { ExternalLink, Github, Heart, Trophy, Activity, Code2, FileText } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
       title: "HealthPlus",
-      description: "Built a full-stack health tracking platform with an AI-powered assistant (HealthBot) using Next.js, Firebase, and Ollama. Tracks nutrition, sleep, and mood with real-time analytics and team-based insights. Focused on turning health data into intelligent, actionable feedback.",
+      description: "HealthPlus is a Full-Stack, AI-powered health management platform that combines health tracking, disease prediction, and conversational healthcare assistance. The app provides both personal as well as team tracking.",
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop",
-      tech: ["Next.js", "Firebase", "Tailwind", "React", "Ollama", "LLaMA 3 (8B)"],
+      tech: ["Next.js", "React", "Tailwind CSS", "Firebase Authentication", "Firestore", "Python", "Machine Learning", "Disease Prediction Models", "Ollama", "LLaMA 3 (8B)", "AI Chatbot", "REST APIs"],
       github: "https://github.com/HazelSharmaCoderHZ/HealthPlus2",
       demo: "https://health-plus2.vercel.app/",
       icon: Activity,
     },
     {
       title: "Dear Diary",
-      description: "A journaling app designed with love and emotions to take care of mental wellbeing",
+      description: "Dear Diary is an AI-enhanced journaling platform designed to support emotional well-being through secure personal journaling, mood tracking, and emotion analysis. The platform helps users understand emotional patterns by analyzing journal entries and providing AI-powered emotional insights.",
       image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=600&h=400&fit=crop",
-      tech: ["MongoDB", "Next.js", "React"],
+      tech: ["React", "Next.js", "MongoDB", "Emotion Detection", "Sentiment Analysis", "AI APIs", "Tailwind CSS", "Postman"],
       github: "https://github.com/HazelSharmaCoderHZ",
       demo: "https://journaldeardiary-pqsj.vercel.app/",
       icon: Heart,
+    },
+    {
+      title: "PDF RAG Assistant",
+      description: "PDF RAG Assistant is a Retrieval-Augmented Generation (RAG) system that allows users to chat with PDF documents using semantic search and AI-powered retrieval. The platform supports multi-document analysis, conversation memory, authentication, and explainable answers with page-level citations.",
+      image: "https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?w=600&h=400&fit=crop",
+      tech: ["Python", "Streamlit", "MongoDB Atlas", "FAISS", "Sentence Transformers", "Groq API", "LLaMA 3.3 70B", "Semantic Chunking", "Vector Search", "RAG", "Authentication", "bcrypt", "PyPDF"],
+      github: "https://github.com/HazelSharmaCoderHZ/RAG-PDF-Chatbot",
+      demo: "https://rag-pdf-chatbot-hazel-sharma.streamlit.app/",
+      icon: FileText,
     },
     {
       title: "PSAI Tech",
