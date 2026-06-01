@@ -7,8 +7,8 @@ const Projects = () => {
     {
       title: "HealthPlus",
       description: "HealthPlus is a Full-Stack, AI-powered health management platform that combines health tracking, disease prediction, and conversational healthcare assistance. The app provides both personal as well as team tracking.",
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop",
-      tech: ["Next.js", "React", "Tailwind CSS", "Firebase Authentication", "Firestore", "Python", "Machine Learning", "Disease Prediction Models", "Ollama", "LLaMA 3 (8B)", "AI Chatbot", "REST APIs"],
+      image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&h=400&fit=crop",
+      tech: ["Next.js", "React", "Tailwind CSS", "Firebase Authentication", "Firestore", "Python", "Disease Prediction Models", "Ollama", "LLaMA 3 (8B)", "AI Chatbot", "REST APIs"],
       github: "https://github.com/HazelSharmaCoderHZ/HealthPlus2",
       demo: "https://health-plus2.vercel.app/",
       icon: Activity,

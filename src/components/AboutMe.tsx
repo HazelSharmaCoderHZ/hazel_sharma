@@ -43,7 +43,7 @@ const AboutMe = () => {
 
               <div className="flex-1 text-center md:text-left">
                 <h3 className="text-xl font-bold text-foreground">Hazel Sharma</h3>
-                <p className="text-primary font-mono text-sm mb-4">Full Stack Developer</p>
+                <p className="text-primary font-mono text-sm mb-4">Full-Stack & AI Engineer</p>
 
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Highly motivated IT student with a passion for leveraging technology to drive innovation. 
