@@ -23,6 +23,15 @@ const Projects = () => {
       icon: Heart,
     },
     {
+      title: "StudySmart",
+      description: "Full-Stack, AI-powered study companion that makes exam prep easier by enabling students to upload PDFs, generate notes, create quizzes, and take mock tests on a single platform. It features a context-aware RAG chatbot built using Gemini API, LangChain, ChromaDB, and FAISS, providing accurate responses from uploaded study materials.",
+      image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=400&fit=crop",
+      tech: ["LangChain", "Next.js", "FastAPI", "MongoDB", "Gemini API", "ChromaDB", "FAISS", "RAG", "Uvicorn"],
+      github: "https://github.com/HazelSharmaCoderHZ/smart-study",
+      demo: "https://smart-study-umber.vercel.app/",
+      icon: GraduationCap,
+    },
+    {
       title: "PDF RAG Assistant",
       description: "PDF RAG Assistant is a Retrieval-Augmented Generation (RAG) system that allows users to chat with PDF documents using semantic search and AI-powered retrieval. The platform supports multi-document analysis, conversation memory, authentication, and explainable answers with page-level citations.",
       image: "https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?w=600&h=400&fit=crop",
@@ -30,15 +39,6 @@ const Projects = () => {
       github: "https://github.com/HazelSharmaCoderHZ/RAG-PDF-Chatbot",
       demo: "https://rag-pdf-chatbot-hazel-sharma.streamlit.app/",
       icon: FileText,
-    },
-    {
-      title: "StudySmart",
-      description: "Full-Stack, AI-powered study companion that makes exam prep easier by enabling students to upload PDFs, generate notes, create quizzes, and take mock tests on a single platform. It features a context-aware RAG chatbot built using Gemini API, LangChain, ChromaDB, and FAISS, providing accurate responses from uploaded study materials.",
-      image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=400&fit=crop",
-      tech: ["LangChain", "Next.js", "FastAPI", "MongoDB", "Gemini API", "ChromaDB", "FAISS", "RAG", "Uvicorn"],
-      github: "https://github.com/HazelSharmaCoderHZ",
-      demo: "#",
-      icon: GraduationCap,
     },
     {
       title: "PSAI Tech",
