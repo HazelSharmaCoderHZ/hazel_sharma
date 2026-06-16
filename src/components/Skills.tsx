@@ -30,6 +30,7 @@ const Skills = () => {
         { name: "REST APIs", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
         { name: "Framer Motion", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg" },
         { name: "Chart.js", logo: "https://www.chartjs.org/media/logo-title.svg" },
+        { name: "FastAPI", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
       ],
     },
     {
@@ -46,6 +47,8 @@ const Skills = () => {
         { name: "Streamlit", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" },
         { name: "MongoDB Atlas", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
         { name: "FAISS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+        { name: "Netlify", logo: "https://api.iconify.design/simple-icons:netlify.svg?color=%2300C7B7" },
+        { name: "OpenAPI", logo: "https://api.iconify.design/simple-icons:openapiinitiative.svg?color=%236BA539" },
       ],
     },
     {
@@ -83,6 +86,7 @@ const Skills = () => {
         { name: "FAISS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
         { name: "Embeddings", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
         { name: "GROQ API", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+        { name: "LangChain", logo: "https://api.iconify.design/simple-icons:langchain.svg?color=%231C3C3C" },
       ],
     },
   ];
