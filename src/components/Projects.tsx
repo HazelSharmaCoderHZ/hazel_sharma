@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Heart, Trophy, Activity, Code2, FileText } from "lucide-react";
+import { ExternalLink, Github, Heart, Trophy, Activity, Code2, FileText, GraduationCap } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -30,6 +30,15 @@ const Projects = () => {
       github: "https://github.com/HazelSharmaCoderHZ/RAG-PDF-Chatbot",
       demo: "https://rag-pdf-chatbot-hazel-sharma.streamlit.app/",
       icon: FileText,
+    },
+    {
+      title: "StudySmart",
+      description: "Full-Stack, AI-powered study companion that makes exam prep easier by enabling students to upload PDFs, generate notes, create quizzes, and take mock tests on a single platform. It features a context-aware RAG chatbot built using Gemini API, LangChain, ChromaDB, and FAISS, providing accurate responses from uploaded study materials.",
+      image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=400&fit=crop",
+      tech: ["LangChain", "Next.js", "FastAPI", "MongoDB", "Gemini API", "ChromaDB", "FAISS", "RAG", "Uvicorn"],
+      github: "https://github.com/HazelSharmaCoderHZ",
+      demo: "#",
+      icon: GraduationCap,
     },
     {
       title: "PSAI Tech",
