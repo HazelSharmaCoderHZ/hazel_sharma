@@ -14,6 +14,15 @@ const Projects = () => {
       icon: Activity,
     },
     {
+      title: "Giiava",
+      description: "A business automation and lead-generation platform developed as part of the Round 2 technical assignment for Quantazone. Enhanced the UI/UX, implemented new features, integrated an AI chatbot, and automated workflows using Make.com.",
+      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop",
+      tech: ["Next.js", "React", "JavaScript", "Tailwind CSS", "Make.com", "AI Chatbot", "Python"],
+      github: "https://github.com/HazelSharmaCoderHZ/gleam-glow-reach",
+      demo: "https://giiavaquantazone.vercel.app/",
+      icon: Trophy,
+    },
+    {
       title: "Dear Diary",
       description: "Dear Diary is an AI-enhanced journaling platform designed to support emotional well-being through secure personal journaling, mood tracking, and emotion analysis. The platform helps users understand emotional patterns by analyzing journal entries and providing AI-powered emotional insights.",
       image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=600&h=400&fit=crop",
