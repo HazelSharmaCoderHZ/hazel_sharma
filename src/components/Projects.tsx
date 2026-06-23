@@ -14,13 +14,13 @@ const Projects = () => {
       icon: Activity,
     },
     {
-      title: "Giiava",
-      description: "A business automation and lead-generation platform developed as part of the Round 2 technical assignment for Quantazone. Enhanced the UI/UX, implemented new features, integrated an AI chatbot, and automated workflows using Make.com.",
-      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop",
-      tech: ["Next.js", "React", "JavaScript", "Tailwind CSS", "Make.com", "AI Chatbot", "Python"],
-      github: "https://github.com/HazelSharmaCoderHZ/gleam-glow-reach",
-      demo: "https://giiavaquantazone.vercel.app/",
-      icon: Trophy,
+      title: "StudySmart",
+      description: "Full-Stack, AI-powered study companion that makes exam prep easier by enabling students to upload PDFs, generate notes, create quizzes, and take mock tests on a single platform. It features a context-aware RAG chatbot built using Gemini API, LangChain, ChromaDB, and FAISS, providing accurate responses from uploaded study materials.",
+      image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=400&fit=crop",
+      tech: ["LangChain", "Next.js", "FastAPI", "MongoDB", "Gemini API", "ChromaDB", "FAISS", "RAG", "Uvicorn"],
+      github: "https://github.com/HazelSharmaCoderHZ/smart-study",
+      demo: "https://smart-study-umber.vercel.app/",
+      icon: GraduationCap,
     },
     {
       title: "Dear Diary",
@@ -32,13 +32,22 @@ const Projects = () => {
       icon: Heart,
     },
     {
-      title: "StudySmart",
-      description: "Full-Stack, AI-powered study companion that makes exam prep easier by enabling students to upload PDFs, generate notes, create quizzes, and take mock tests on a single platform. It features a context-aware RAG chatbot built using Gemini API, LangChain, ChromaDB, and FAISS, providing accurate responses from uploaded study materials.",
-      image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=400&fit=crop",
-      tech: ["LangChain", "Next.js", "FastAPI", "MongoDB", "Gemini API", "ChromaDB", "FAISS", "RAG", "Uvicorn"],
-      github: "https://github.com/HazelSharmaCoderHZ/smart-study",
-      demo: "https://smart-study-umber.vercel.app/",
-      icon: GraduationCap,
+      title: "PSAI Tech",
+      description: "A professional website built during my internship at Aarvasa, showcasing the company's services and solutions to clients",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      tech: ["React", "TypeScript", "Tailwind CSS"],
+      github: "https://github.com/HazelSharmaCoderHZ/PSAI-Tech",
+      demo: "https://psai-tech-ten.vercel.app/",
+      icon: Trophy,
+    },
+    {
+      title: "Giiava",
+      description: "A business automation and lead-generation platform developed as part of the Round 2 technical assignment for Quantazone. Enhanced the UI/UX, implemented new features, integrated an AI chatbot, and automated workflows using Make.com.",
+      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop",
+      tech: ["Next.js", "React", "JavaScript", "Tailwind CSS", "Make.com", "AI Chatbot", "Python"],
+      github: "https://github.com/HazelSharmaCoderHZ/gleam-glow-reach",
+      demo: "https://giiavaquantazone.vercel.app/",
+      icon: Trophy,
     },
     {
       title: "PDF RAG Assistant",
@@ -50,15 +59,6 @@ const Projects = () => {
       icon: FileText,
     },
     {
-      title: "PSAI Tech",
-      description: "A professional website built during my internship at Aarvasa, showcasing the company's services and solutions to clients",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-      tech: ["React", "TypeScript", "Tailwind CSS"],
-      github: "https://github.com/HazelSharmaCoderHZ/PSAI-Tech",
-      demo: "https://psai-tech-ten.vercel.app/",
-      icon: Trophy,
-    },
-    {
       title: "Code Golf",
       description: "A PR website built for the college club IEEE WIE, showcasing events and community engagement",
       image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=600&h=400&fit=crop",
@@ -68,6 +68,7 @@ const Projects = () => {
       icon: Code2,
     },
   ];
+
 
   return (
     <section className="py-24 relative overflow-hidden">
