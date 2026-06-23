@@ -49,6 +49,7 @@ const Skills = () => {
         { name: "FAISS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
         { name: "Netlify", logo: "https://api.iconify.design/simple-icons:netlify.svg?color=%2300C7B7" },
         { name: "OpenAPI", logo: "https://api.iconify.design/simple-icons:openapiinitiative.svg?color=%236BA539" },
+        { name: "Make.com", logo: "https://api.iconify.design/simple-icons:make.svg?color=%236B00FF" },
       ],
     },
     {
