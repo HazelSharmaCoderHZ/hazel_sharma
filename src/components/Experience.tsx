@@ -5,29 +5,45 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      title: "Technical Associate Intern",
+      company: "Quantazone",
+      period: "June 2026 - Present",
+      location: "India",
+      description: "Managing ERP, CRM, and HRMS solutions using automation software.",
+      skills: [
+        "Zoho",
+        "Make.com",
+        "Git & GitHub",
+        "Prompt Engineering",
+        "Performance Optimization",
+        "RAG Chatbots",
+        "Cursor"
+      ]
+    },
+    {
       title: "Frontend Developer Intern",
       company: "Aarvasa",
       period: "January 2026 - May 2026",
       location: "India",
       description: "Working as a frontend developer, building responsive and user-friendly web applications.",
       skills: [
-  "React",
-  "TypeScript",
-  "Tailwind CSS",
-  "JavaScript (ES6+)",
-  "Responsive Web Design",
-  "REST API Integration",
-  "Git & GitHub",
-  "Component-Based Architecture",
-  "State Management",
-  "UI/UX Optimization",
-  "Frontend Debugging",
-  "Vite",
-  "Performance Optimization",
-  "Reusable Components",
-  "Figma to Code",
-  "Cross-Browser Compatibility"
-]
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "JavaScript (ES6+)",
+        "Responsive Web Design",
+        "REST API Integration",
+        "Git & GitHub",
+        "Component-Based Architecture",
+        "State Management",
+        "UI/UX Optimization",
+        "Frontend Debugging",
+        "Vite",
+        "Performance Optimization",
+        "Reusable Components",
+        "Figma to Code",
+        "Cross-Browser Compatibility"
+      ]
     },
   ];
 
