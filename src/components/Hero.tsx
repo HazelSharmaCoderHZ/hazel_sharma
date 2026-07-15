@@ -178,6 +178,7 @@ const Hero = () => {
             {[
               { icon: Github, href: "https://github.com/HazelSharmaCoderHZ", label: "GitHub" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/hazelsharma-it/", label: "LinkedIn" },
+              { icon: Code, href: "https://leetcode.com/u/Hazel_Sharma/", label: "LeetCode" },
               { icon: Mail, href: "mailto:sharmahazel310@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
