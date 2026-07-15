@@ -1,12 +1,13 @@
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Github, Linkedin, Twitter, ArrowUpRight } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin, Twitter, Code, ArrowUpRight } from "lucide-react";
 
 const Connect = () => {
   const socials = [
     { icon: Github, href: "https://github.com/HazelSharmaCoderHZ", label: "GitHub", handle: "@HazelSharmaCoderHZ" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/hazelsharma-it/", label: "LinkedIn", handle: "hazelsharma-it" },
     { icon: Twitter, href: "https://x.com/HazelSharma28", label: "Twitter / X", handle: "@HazelSharma28" },
+    { icon: Code, href: "https://leetcode.com/u/Hazel_Sharma/", label: "LeetCode", handle: "Hazel_Sharma" },
   ];
 
   return (

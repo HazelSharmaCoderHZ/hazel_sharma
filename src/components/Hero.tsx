@@ -1,7 +1,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Code } from "lucide-react";
 
 const particles = Array.from({ length: 8 }, (_, i) => ({
   id: i,
