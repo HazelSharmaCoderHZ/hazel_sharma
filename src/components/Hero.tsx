@@ -1,7 +1,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Code } from "lucide-react";
 
 const particles = Array.from({ length: 8 }, (_, i) => ({
   id: i,
@@ -178,6 +178,7 @@ const Hero = () => {
             {[
               { icon: Github, href: "https://github.com/HazelSharmaCoderHZ", label: "GitHub" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/hazelsharma-it/", label: "LinkedIn" },
+              { icon: Code, href: "https://leetcode.com/u/Hazel_Sharma/", label: "LeetCode" },
               { icon: Mail, href: "mailto:sharmahazel310@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
