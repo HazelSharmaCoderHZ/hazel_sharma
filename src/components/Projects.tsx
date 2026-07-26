@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Heart, Trophy, Activity, Code2, FileText, GraduationCap, Video } from "lucide-react";
+import { ExternalLink, Github, Heart, Trophy, Activity, Code2, FileText, GraduationCap, Video, Rocket } from "lucide-react";
 
 
 const Projects = () => {
@@ -26,7 +26,7 @@ const Projects = () => {
     {
       title: "YT-Video-Dubber",
       description: "An AI-powered Python application that automatically dubs YouTube videos into another language using speech recognition, machine translation, and text-to-speech synthesis.",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
+      image: "https://images.unsplash.com/photo-1762340276217-9d9e02976d47?w=600&h=400&fit=crop",
       tech: ["Python", "yt-dlp", "FFmpeg", "Faster-Whisper", "Google Gemini API", "Edge-TTS", "NumPy"],
       github: "https://github.com/HazelSharmaCoderHZ/yt-video-dubber",
       demo: "https://drive.google.com/file/d/1yTsXLufmfmsPgqipNeWi2ATcAZpKKFKZ/view?usp=sharing",
@@ -77,6 +77,16 @@ const Projects = () => {
       github: "https://github.com/HazelSharmaCoderHZ/Code-Golf",
       demo: "https://codegolfwie.vercel.app/",
       icon: Code2,
+    },
+    {
+      title: "LeadPilot AI",
+      status: "Under Progress",
+      description: "LeadPilot AI is an intelligent sales automation platform that helps businesses discover prospects, research companies, qualify leads, and generate personalized outreach messages in minutes.",
+      image: "https://images.unsplash.com/photo-1771923082503-0a3381c46cef?w=600&h=400&fit=crop",
+      tech: ["Streamlit", "FastAPI", "Python", "Pydantic v2", "AsyncIO", "PostgreSQL", "Supabase", "SQLAlchemy 2.0", "Alembic", "Google Gemini API", "LangGraph", "LangChain", "Firecrawl"],
+      github: "leadpilot-ai.streamlit.app/",
+      demo: "https://leadpilot-ai.streamlit.app/",
+      icon: Rocket,
     },
   ];
 
@@ -162,13 +172,18 @@ const Projects = () => {
 
               {/* Content */}
               <div className="p-6">
-                <div className="flex items-center gap-3 mb-3">
+                <div className="flex items-center gap-3 mb-3 flex-wrap">
                   <div className="p-2 bg-primary/10 rounded-lg border border-primary/20">
                     <project.icon className="w-4 h-4 text-primary" />
                   </div>
                   <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
+                  {project.status && (
+                    <span className="ml-auto px-2 py-0.5 text-xs font-semibold bg-primary/20 text-primary border border-primary/30 rounded-md">
+                      {project.status}
+                    </span>
+                  )}
                 </div>
 
                 <p className="text-muted-foreground text-sm mb-4 line-clamp-3 leading-relaxed">
