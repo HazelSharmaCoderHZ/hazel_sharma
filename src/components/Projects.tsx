@@ -78,16 +78,6 @@ const Projects = () => {
       demo: "https://codegolfwie.vercel.app/",
       icon: Code2,
     },
-    {
-      title: "LeadPilot AI",
-      status: "Under Progress",
-      description: "LeadPilot AI is an intelligent sales automation platform that helps businesses discover prospects, research companies, qualify leads, and generate personalized outreach messages in minutes.",
-      image: "https://images.unsplash.com/photo-1771923082503-0a3381c46cef?w=600&h=400&fit=crop",
-      tech: ["Streamlit", "FastAPI", "Python", "Pydantic v2", "AsyncIO", "PostgreSQL", "Supabase", "SQLAlchemy 2.0", "Alembic", "Google Gemini API", "LangGraph", "LangChain", "Firecrawl"],
-      github: "leadpilot-ai.streamlit.app/",
-      demo: "https://leadpilot-ai.streamlit.app/",
-      icon: Rocket,
-    },
   ];
 
 
