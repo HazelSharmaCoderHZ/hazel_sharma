@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Heart, Trophy, Activity, Code2, FileText, GraduationCap } from "lucide-react";
+import { ExternalLink, Github, Heart, Trophy, Activity, Code2, FileText, GraduationCap, Video } from "lucide-react";
+
 
 const Projects = () => {
   const projects = [
@@ -23,6 +24,15 @@ const Projects = () => {
       icon: GraduationCap,
     },
     {
+      title: "YT-Video-Dubber",
+      description: "An AI-powered Python application that automatically dubs YouTube videos into another language using speech recognition, machine translation, and text-to-speech synthesis.",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
+      tech: ["Python", "yt-dlp", "FFmpeg", "Faster-Whisper", "Google Gemini API", "Edge-TTS", "NumPy"],
+      github: "https://github.com/HazelSharmaCoderHZ/yt-video-dubber",
+      demo: "https://drive.google.com/file/d/1yTsXLufmfmsPgqipNeWi2ATcAZpKKFKZ/view?usp=sharing",
+      icon: Video,
+    },
+    {
       title: "Dear Diary",
       description: "Dear Diary is an AI-enhanced journaling platform designed to support emotional well-being through secure personal journaling, mood tracking, and emotion analysis. The platform helps users understand emotional patterns by analyzing journal entries and providing AI-powered emotional insights.",
       image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=600&h=400&fit=crop",
@@ -31,6 +41,7 @@ const Projects = () => {
       demo: "https://journaldeardiary-pqsj.vercel.app/",
       icon: Heart,
     },
+
     {
       title: "PSAI Tech",
       description: "A professional website built during my internship at Aarvasa, showcasing the company's services and solutions to clients",
