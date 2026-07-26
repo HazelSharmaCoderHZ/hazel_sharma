@@ -5,20 +5,6 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "AI Data Analyst",
-      company: "InAmigos Foundation",
-      period: "July 2026",
-      location: "India",
-      description: "1 month internship focused on AI-driven data analysis and insights.",
-      skills: [
-        "Python",
-        "Data Analysis",
-        "Machine Learning",
-        "AI",
-        "Data Visualization"
-      ]
-    },
-    {
       title: "Technical Associate Intern",
       company: "Quantazone",
       period: "June 2026 - July 2026",
