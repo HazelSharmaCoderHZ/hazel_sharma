@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Heart, Trophy, Activity, Code2, FileText, GraduationCap } from "lucide-react";
+import { ExternalLink, Github, Heart, Trophy, Activity, Code2, FileText, GraduationCap, Video } from "lucide-react";
+
 
 const Projects = () => {
   const projects = [
