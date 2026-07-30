@@ -105,10 +105,10 @@ const Skills = () => {
   const softSkills = [
     "AI Application Engineering",
     "Full-Stack Development",
-    "RAG & LLM Systems",
-    "Frontend Development",
-    "Competitive Programming",
-    "Public Speaking",
+    "Backend Engineering",
+    "Agentic AI Systems",
+    "RAG & LLM Applications",
+    "Cloud Deployment",
   ];
 
   return (
