@@ -94,8 +94,6 @@ const Skills = () => {
         { name: "Vector Databases", logo: "https://api.iconify.design/mdi:database-search.svg?color=%23c73232" },
         { name: "AI Agents", logo: "https://api.iconify.design/mdi:robot-outline.svg?color=%23c73232" },
         { name: "Agentic Workflows", logo: "https://api.iconify.design/mdi:workflow.svg?color=%23c73232" },
-        { name: "Function Calling", logo: "https://api.iconify.design/mdi:function-variant.svg?color=%23c73232" },
-        { name: "Context Engineering", logo: "https://api.iconify.design/mdi:brain.svg?color=%23c73232" },
         { name: "Faster Whisper", logo: "https://api.iconify.design/mdi:microphone-message.svg?color=%23c73232" },
         { name: "Firecrawl", logo: "https://api.iconify.design/mdi:fire.svg?color=%23ff6b35" },
       ],
