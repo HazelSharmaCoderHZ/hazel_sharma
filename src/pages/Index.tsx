@@ -10,6 +10,7 @@ import Projects from "@/components/Projects";
 import Connect from "@/components/Connect";
 import Navbar from "@/components/Navbar";
 import Loader from "@/components/Loader";
+import AskHazel from "@/components/AskHazel";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 const Index = () => {
@@ -49,6 +50,7 @@ const Index = () => {
           <section id="contact">
             <Connect />
           </section>
+          <AskHazel />
         </div>
       )}
     </ThemeProvider>
