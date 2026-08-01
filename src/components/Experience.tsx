@@ -48,19 +48,19 @@ const Experience = () => {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-16 sm:py-24 relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-20" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
         >
           
-          <h2 className="text-4xl lg:text-5xl font-bold gradient-text inline-block">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text inline-block">
             Experience
           </h2>
         </motion.div>
@@ -69,7 +69,7 @@ const Experience = () => {
           {/* Timeline */}
           <div className="relative">
             <motion.div
-              className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/30 to-transparent"
+              className="absolute left-3 sm:left-6 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/30 to-transparent"
               initial={{ scaleY: 0 }}
               whileInView={{ scaleY: 1 }}
               transition={{ duration: 1 }}
@@ -80,7 +80,7 @@ const Experience = () => {
             {experiences.map((exp, index) => (
               <motion.div
                 key={index}
-                className="relative pl-16 pb-8"
+                className="relative pl-8 sm:pl-16 pb-8"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -88,7 +88,7 @@ const Experience = () => {
               >
                 {/* Timeline dot */}
                 <motion.div
-                  className="absolute left-6 top-6 -translate-x-1/2 w-3 h-3 bg-primary rounded-full ring-4 ring-background glow-primary-strong"
+                  className="absolute left-3 sm:left-6 top-6 -translate-x-1/2 w-3 h-3 bg-primary rounded-full ring-4 ring-background glow-primary-strong"
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   transition={{ delay: 0.3 }}
@@ -96,17 +96,17 @@ const Experience = () => {
                 />
 
                 <motion.div
-                  className="glass rounded-2xl p-6 hover:glow-primary transition-all duration-300"
+                  className="glass rounded-2xl p-4 sm:p-6 hover:glow-primary transition-all duration-300"
                   whileHover={{ y: -4 }}
                 >
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-3 sm:gap-4">
                     <div className="p-2.5 bg-primary/10 rounded-xl border border-primary/20">
                       <Briefcase className="w-5 h-5 text-primary" />
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg font-bold text-foreground">{exp.title}</h3>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base sm:text-lg font-bold text-foreground">{exp.title}</h3>
                       <p className="text-primary font-semibold">{exp.company}</p>
-                      <div className="flex flex-wrap gap-4 mt-2 text-sm text-muted-foreground">
+                      <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs sm:text-sm text-muted-foreground">
                         <span className="flex items-center gap-1.5">
                           <Calendar className="w-3.5 h-3.5" />
                           {exp.period}

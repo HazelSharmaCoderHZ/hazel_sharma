@@ -110,7 +110,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-16 sm:py-24 relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-20" />
 
       {/* Glow orb */}
@@ -120,29 +120,29 @@ const Skills = () => {
         transition={{ duration: 18, repeat: Infinity }}
       />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
           
-          <h2 className="text-4xl lg:text-5xl font-bold gradient-text inline-block">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text inline-block">
             Technical Arsenal
           </h2>
-          <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
+          <p className="text-sm sm:text-base text-muted-foreground mt-4 max-w-xl mx-auto">
             Technologies and tools I use to bring ideas to life
           </p>
         </motion.div>
 
         {/* Skills Grid */}
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16">
           {skillCategories.map((category, catIdx) => (
             <motion.div
               key={category.title}
-              className="glass rounded-2xl p-6 hover:glow-primary transition-all duration-300"
+              className="glass rounded-2xl p-4 sm:p-6 hover:glow-primary transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: catIdx * 0.1 }}
@@ -152,11 +152,11 @@ const Skills = () => {
               <h3 className="font-mono text-sm text-primary mb-4 pb-3 border-b border-border/50">
                 {category.title}
               </h3>
-              <div className="grid grid-cols-2 gap-2.5">
+              <div className="grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-2.5">
                 {category.skills.map((skill, skillIdx) => (
                   <motion.div
                     key={skill.name}
-                    className="flex items-center gap-2.5 p-2 rounded-lg hover:bg-primary/5 transition-all duration-200 group cursor-default"
+                    className="flex items-center gap-2 sm:gap-2.5 p-1.5 sm:p-2 rounded-lg hover:bg-primary/5 transition-all duration-200 group cursor-default min-w-0"
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ delay: catIdx * 0.05 + skillIdx * 0.03 }}
@@ -168,9 +168,9 @@ const Skills = () => {
                       alt={skill.name}
                       loading="lazy"
                       decoding="async"
-                      className="w-5 h-5 group-hover:scale-110 transition-transform"
+                      className="w-5 h-5 shrink-0 group-hover:scale-110 transition-transform"
                     />
-                    <span className="text-sm text-foreground font-medium">{skill.name}</span>
+                    <span className="text-xs sm:text-sm text-foreground font-medium leading-tight">{skill.name}</span>
                   </motion.div>
                 ))}
               </div>
@@ -187,11 +187,11 @@ const Skills = () => {
           viewport={{ once: true }}
         >
           <h3 className="font-mono text-sm text-primary mb-6 text-center">// expertise</h3>
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
             {softSkills.map((skill, i) => (
               <motion.div
                 key={skill}
-                className="px-5 py-2.5 glass rounded-full text-sm font-medium text-foreground hover:text-primary hover:border-primary/30 hover:glow-primary transition-all duration-300 cursor-default"
+                className="px-4 sm:px-5 py-2 sm:py-2.5 glass rounded-full text-xs sm:text-sm font-medium text-foreground hover:text-primary hover:border-primary/30 hover:glow-primary transition-all duration-300 cursor-default"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: i * 0.08 }}
