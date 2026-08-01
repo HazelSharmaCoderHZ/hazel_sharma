@@ -29,7 +29,7 @@ Deno.serve(async (req) => {
     const result = streamText({
       model: gateway("google/gemini-3.6-flash"),
       system: SYSTEM_PROMPT,
-      messages: convertToModelMessages(messages.slice(-20)),
+      messages: await convertToModelMessages(messages.slice(-20)),
     });
 
     return result.toUIMessageStreamResponse({
