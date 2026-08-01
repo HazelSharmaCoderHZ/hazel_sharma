@@ -53,12 +53,13 @@ const AskHazel = () => {
     transport,
     onError: (error) => {
       const message = error?.message ?? "";
+      const opts = { duration: 5000 } as const;
       if (message.includes("429")) {
-        toast.error("Too many questions right now — please try again shortly.");
+        toast.error("Too many questions right now — please try again shortly.", opts);
       } else if (message.includes("402")) {
-        toast.error("The assistant is out of credits at the moment.");
+        toast.error("The assistant is out of credits at the moment.", opts);
       } else {
-        toast.error("Couldn't reach the assistant. Please try again.");
+        toast.error("Couldn't reach the assistant. Please try again.", opts);
       }
     },
   });
@@ -90,45 +91,58 @@ const AskHazel = () => {
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-label={open ? "Close chat about Hazel" : "Ask anything about Hazel"}
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-lg glow-primary-strong"
-        whileHover={{ scale: 1.06, rotate: -3 }}
-        whileTap={{ scale: 0.94 }}
+        className="group fixed bottom-6 right-6 z-50 flex items-center gap-2.5 rounded-full border border-primary/30 bg-gradient-to-r from-primary to-primary/80 px-4 py-3 text-primary-foreground shadow-xl glow-primary-strong"
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        whileHover={{ scale: 1.04 }}
+        whileTap={{ scale: 0.96 }}
       >
-        <AnimatePresence mode="wait" initial={false}>
-          <motion.span
-            key={open ? "close" : "open"}
-            initial={{ opacity: 0, scale: 0.6 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.6 }}
-            transition={{ duration: 0.15 }}
-          >
-            {open ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
-          </motion.span>
-        </AnimatePresence>
+        <span className="relative flex h-8 w-8 items-center justify-center rounded-full bg-primary-foreground/15">
+          <span className="absolute inset-0 animate-ping rounded-full bg-primary-foreground/20" />
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.span
+              key={open ? "close" : "open"}
+              initial={{ opacity: 0, scale: 0.6 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.6 }}
+              transition={{ duration: 0.15 }}
+            >
+              {open ? <X className="h-4 w-4" /> : <MessageCircle className="h-4 w-4" />}
+            </motion.span>
+          </AnimatePresence>
+        </span>
+        {!open && (
+          <span className="whitespace-nowrap font-mono text-xs font-semibold tracking-tight sm:text-sm">
+            Hazel's Assistant 👋
+          </span>
+        )}
       </motion.button>
 
       <AnimatePresence>
         {open && (
           <motion.div
-            className="fixed bottom-24 right-4 z-50 flex h-[min(560px,calc(100vh-8rem))] w-[calc(100vw-2rem)] max-w-[400px] flex-col overflow-hidden rounded-2xl glass border border-primary/20 shadow-2xl"
+            className="fixed bottom-24 right-4 z-50 flex h-[min(580px,calc(100vh-8rem))] w-[calc(100vw-2rem)] max-w-[410px] flex-col overflow-hidden rounded-3xl glass border border-primary/25 shadow-2xl ring-1 ring-primary/10"
             initial={{ opacity: 0, y: 20, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.96 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
           >
             {/* Header */}
-            <div className="flex items-center gap-3 border-b border-border/50 px-4 py-3">
+            <div className="relative flex items-center gap-3 border-b border-border/50 bg-gradient-to-r from-primary/15 via-primary/5 to-transparent px-4 py-3.5">
               <img
                 src={avatar}
                 alt="Ask Hazel assistant"
                 width={40}
                 height={40}
-                className="h-9 w-9 rounded-xl bg-background/40 p-0.5"
+                className="h-10 w-10 rounded-xl border border-primary/25 bg-background/50 p-0.5"
               />
               <div className="min-w-0 flex-1">
-                <p className="truncate text-sm font-bold text-foreground">Ask Hazel</p>
-                <p className="truncate font-mono text-[11px] text-primary">
-                  AI assistant · trained on her work
+                <p className="truncate text-sm font-bold tracking-tight text-foreground">
+                  Hazel's Assistant
+                </p>
+                <p className="flex items-center gap-1.5 truncate font-mono text-[11px] text-primary">
+                  <span className="inline-block h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_8px_hsl(var(--primary))]" />
+                  online · trained on her work
                 </p>
               </div>
               {messages.length > 0 && (
@@ -147,18 +161,21 @@ const AskHazel = () => {
             <Conversation className="flex-1">
               <ConversationContent className="gap-3 p-4">
                 {messages.length === 0 ? (
-                  <div className="space-y-4 py-4">
+                  <div className="space-y-5 py-4">
                     <p className="text-sm leading-relaxed text-muted-foreground">
                       Hi! I'm Hazel's AI assistant. Ask me about her projects,
                       skills, internships or education.
                     </p>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="space-y-2">
+                      <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground/70">
+                        Try asking
+                      </p>
                       {SUGGESTIONS.map((suggestion) => (
                         <button
                           key={suggestion}
                           type="button"
                           onClick={() => ask(suggestion)}
-                          className="rounded-full border border-border/60 px-3 py-1.5 text-xs text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary"
+                          className="block w-full rounded-xl border border-border/60 bg-background/30 px-3.5 py-2.5 text-left text-xs text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/5 hover:text-primary"
                         >
                           {suggestion}
                         </button>
@@ -186,7 +203,7 @@ const AskHazel = () => {
             </Conversation>
 
             {/* Composer */}
-            <div className="border-t border-border/50 p-3">
+            <div className="border-t border-border/50 bg-background/30 p-3">
               <PromptInput
                 onSubmit={(_message, event) => {
                   event.preventDefault();
