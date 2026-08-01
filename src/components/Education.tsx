@@ -23,19 +23,19 @@ const Education = () => {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-16 sm:py-24 relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-20" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
           
-          <h2 className="text-4xl lg:text-5xl font-bold gradient-text inline-block">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text inline-block">
             Education
           </h2>
         </motion.div>
@@ -43,7 +43,7 @@ const Education = () => {
         <div className="max-w-3xl mx-auto">
           <div className="relative">
             <motion.div
-              className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/30 to-transparent"
+              className="absolute left-3 sm:left-6 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/30 to-transparent"
               initial={{ scaleY: 0 }}
               whileInView={{ scaleY: 1 }}
               transition={{ duration: 1 }}
@@ -54,7 +54,7 @@ const Education = () => {
             {education.map((item, index) => (
               <motion.div
                 key={index}
-                className="relative pl-16 pb-12 last:pb-0"
+                className="relative pl-8 sm:pl-16 pb-10 sm:pb-12 last:pb-0"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -62,7 +62,7 @@ const Education = () => {
               >
                 {/* Timeline dot */}
                 <motion.div
-                  className="absolute left-6 top-6 -translate-x-1/2 w-3 h-3 bg-primary rounded-full ring-4 ring-background glow-primary-strong"
+                  className="absolute left-3 sm:left-6 top-6 -translate-x-1/2 w-3 h-3 bg-primary rounded-full ring-4 ring-background glow-primary-strong"
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   transition={{ delay: index * 0.2 + 0.3 }}
@@ -70,7 +70,7 @@ const Education = () => {
                 />
 
                 <motion.div
-                  className="glass rounded-2xl p-6 hover:glow-primary transition-all duration-300"
+                  className="glass rounded-2xl p-4 sm:p-6 hover:glow-primary transition-all duration-300"
                   whileHover={{ y: -4 }}
                 >
                   <div className="flex items-center gap-2 text-primary font-mono text-sm mb-3">
@@ -78,7 +78,7 @@ const Education = () => {
                     {item.year}
                   </div>
 
-                  <h3 className="text-lg font-bold text-foreground mb-1">{item.degree}</h3>
+                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-1">{item.degree}</h3>
                   <div className="flex items-center gap-2 mb-3">
                     <GraduationCap className="w-4 h-4 text-primary" />
                     <span className="text-primary font-semibold">{item.institution}</span>
@@ -91,8 +91,8 @@ const Education = () => {
 
                   <p className="text-sm text-muted-foreground mb-3">{item.description}</p>
 
-                  <div className="px-3 py-1.5 bg-primary/10 rounded-lg border border-primary/20 inline-block">
-                    <span className="text-xs font-mono text-primary font-semibold">{item.gpa}</span>
+                  <div className="px-3 py-1.5 bg-primary/10 rounded-lg border border-primary/20 inline-block max-w-full">
+                    <span className="text-[11px] sm:text-xs font-mono text-primary font-semibold break-words">{item.gpa}</span>
                   </div>
                 </motion.div>
               </motion.div>
