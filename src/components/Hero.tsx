@@ -85,7 +85,7 @@ const Hero = () => {
         />
       ))}
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 py-12">
         <div className="max-w-4xl mx-auto text-center">
           {/* Greeting */}
           <motion.div
@@ -100,7 +100,7 @@ const Hero = () => {
 
           {/* Name */}
           <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
+            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -111,7 +111,7 @@ const Hero = () => {
 
           {/* Typing effect */}
           <motion.div
-            className="text-xl md:text-3xl mb-8 text-muted-foreground font-light min-h-[2.5rem]"
+            className="text-lg sm:text-xl md:text-3xl mb-8 text-muted-foreground font-light min-h-[2.5rem]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -128,7 +128,7 @@ const Hero = () => {
 
           {/* Bio */}
           <motion.p
-            className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -139,14 +139,14 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <motion.div
-            className="flex flex-wrap gap-4 justify-center mb-12"
+            className="flex flex-wrap gap-3 sm:gap-4 justify-center mb-10 sm:mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <motion.button
               onClick={() => scrollToSection("projects")}
-              className="group relative px-8 py-3.5 bg-primary text-primary-foreground font-medium rounded-xl overflow-hidden"
+              className="group relative px-6 sm:px-8 py-3 sm:py-3.5 bg-primary text-primary-foreground font-medium rounded-xl overflow-hidden"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >
@@ -160,7 +160,7 @@ const Hero = () => {
             </motion.button>
             <motion.button
               onClick={() => scrollToSection("contact")}
-              className="px-8 py-3.5 border border-border rounded-xl text-foreground font-medium hover:border-primary/50 hover:bg-primary/5 transition-all duration-300"
+              className="px-6 sm:px-8 py-3 sm:py-3.5 border border-border rounded-xl text-foreground font-medium hover:border-primary/50 hover:bg-primary/5 transition-all duration-300"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >

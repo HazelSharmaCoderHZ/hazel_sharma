@@ -91,13 +91,13 @@ const AskHazel = () => {
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-label={open ? "Close chat about Hazel" : "Ask anything about Hazel"}
-        className="group fixed bottom-6 right-6 z-50 flex items-center gap-2.5 rounded-full border border-primary/30 bg-gradient-to-r from-primary to-primary/80 px-4 py-3 text-primary-foreground shadow-xl glow-primary-strong"
+        className="group fixed bottom-4 right-4 z-50 flex items-center gap-2 rounded-full border border-primary/30 bg-gradient-to-r from-primary to-primary/80 px-3 py-2.5 text-primary-foreground shadow-xl glow-primary-strong sm:bottom-6 sm:right-6 sm:gap-2.5 sm:px-4 sm:py-3"
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         whileHover={{ scale: 1.04 }}
         whileTap={{ scale: 0.96 }}
       >
-        <span className="relative flex h-8 w-8 items-center justify-center rounded-full bg-primary-foreground/15">
+        <span className="relative flex h-7 w-7 items-center justify-center rounded-full bg-primary-foreground/15 sm:h-8 sm:w-8">
           <span className="absolute inset-0 animate-ping rounded-full bg-primary-foreground/20" />
           <AnimatePresence mode="wait" initial={false}>
             <motion.span
@@ -112,7 +112,7 @@ const AskHazel = () => {
           </AnimatePresence>
         </span>
         {!open && (
-          <span className="whitespace-nowrap font-mono text-xs font-semibold tracking-tight sm:text-sm">
+          <span className="whitespace-nowrap font-mono text-[11px] font-semibold tracking-tight sm:text-sm">
             Hazel's Assistant 👋
           </span>
         )}
@@ -121,7 +121,7 @@ const AskHazel = () => {
       <AnimatePresence>
         {open && (
           <motion.div
-            className="fixed bottom-24 right-4 z-50 flex h-[min(580px,calc(100vh-8rem))] w-[calc(100vw-2rem)] max-w-[410px] flex-col overflow-hidden rounded-3xl glass border border-primary/25 shadow-2xl ring-1 ring-primary/10"
+            className="fixed bottom-20 right-3 left-3 z-50 flex h-[min(580px,calc(100vh-7rem))] flex-col overflow-hidden rounded-3xl glass border border-primary/25 shadow-2xl ring-1 ring-primary/10 sm:bottom-24 sm:right-4 sm:left-auto sm:w-[calc(100vw-2rem)] sm:max-w-[410px]"
             initial={{ opacity: 0, y: 20, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.96 }}
