@@ -29,10 +29,16 @@ Deno.serve(async (req) => {
     const result = streamText({
       model: gateway("google/gemini-3.6-flash"),
       system: SYSTEM_PROMPT,
-      messages: convertToModelMessages(messages.slice(-20)),
+      messages: await convertToModelMessages(messages.slice(-20)),
     });
 
-    return result.toUIMessageStreamResponse({ headers: corsHeaders });
+    return result.toUIMessageStreamResponse({
+      headers: corsHeaders,
+      onError: (error) => {
+        console.error("stream error", error);
+        return "An error occurred.";
+      },
+    });
   } catch (error) {
     console.error("ask-hazel error", error);
     return new Response(
