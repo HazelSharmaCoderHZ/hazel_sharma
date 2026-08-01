@@ -29,25 +29,25 @@ const Index = () => {
       {!loading && (
         <div className="min-h-screen bg-background noise-bg">
           <Navbar />
-          <section id="home">
+          <section id="home" className="scroll-mt-16">
             <Hero />
           </section>
-          <section id="about">
+          <section id="about" className="scroll-mt-16">
             <AboutMe />
           </section>
-          <section id="experience">
+          <section id="experience" className="scroll-mt-16">
             <Experience />
           </section>
-          <section id="skills">
+          <section id="skills" className="scroll-mt-16">
             <Skills />
           </section>
-          <section id="projects">
+          <section id="projects" className="scroll-mt-16">
             <Projects />
           </section>
-          <section id="education">
+          <section id="education" className="scroll-mt-16">
             <Education />
           </section>
-          <section id="contact">
+          <section id="contact" className="scroll-mt-16">
             <Connect />
           </section>
           <AskHazel />
