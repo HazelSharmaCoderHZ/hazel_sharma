@@ -32,7 +32,13 @@ Deno.serve(async (req) => {
       messages: convertToModelMessages(messages.slice(-20)),
     });
 
-    return result.toUIMessageStreamResponse({ headers: corsHeaders });
+    return result.toUIMessageStreamResponse({
+      headers: corsHeaders,
+      onError: (error) => {
+        console.error("stream error", error);
+        return "An error occurred.";
+      },
+    });
   } catch (error) {
     console.error("ask-hazel error", error);
     return new Response(
