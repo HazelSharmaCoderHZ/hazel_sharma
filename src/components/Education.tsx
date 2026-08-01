@@ -18,7 +18,7 @@ const Education = () => {
       degree: "CBSE Class 12th & 10th",
       location: "India",
       description: "Completed secondary education with excellent academic performance and leadership roles.",
-      gpa: "Class 12th: 92.4% (PCM) | Class 10th: 95.6% | Head Girl'24",
+      gpa: "Class 12th: 92.4% (PCM) | Class 10th: 95.6% | Head Girl'24 | CS Topper (Class 12) | IT Topper (Class 10)",
     },
   ];
 
