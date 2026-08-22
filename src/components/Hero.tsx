@@ -1,7 +1,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail, Code } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Code, Download } from "lucide-react";
 
 const particles = Array.from({ length: 8 }, (_, i) => ({
   id: i,
@@ -158,14 +158,16 @@ const Hero = () => {
                 style={{ opacity: 0.3 }}
               />
             </motion.button>
-            <motion.button
-              onClick={() => scrollToSection("contact")}
-              className="px-6 sm:px-8 py-3 sm:py-3.5 border border-border rounded-xl text-foreground font-medium hover:border-primary/50 hover:bg-primary/5 transition-all duration-300"
+            <motion.a
+              href="/Hazel_Sharma_Resume.pdf"
+              download="Hazel_Sharma_Resume.pdf"
+              className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 border border-border rounded-xl text-foreground font-medium hover:border-primary/50 hover:bg-primary/5 transition-all duration-300"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >
-              Get in Touch
-            </motion.button>
+              <Download className="w-4 h-4" />
+              Download Resume
+            </motion.a>
           </motion.div>
 
           {/* Social links */}

@@ -1,8 +1,11 @@
 
 import { motion } from "framer-motion";
-import { Download } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const AboutMe = () => {
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <section className="py-16 sm:py-24 relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-30" />
@@ -57,16 +60,15 @@ const AboutMe = () => {
                   <span className="text-primary font-semibold">people management</span> skills.
                 </p>
 
-                <motion.a
-                  href="/Hazel_Sharma_Resume.pdf"
-                  download="Hazel_Sharma_Resume.pdf"
+                <motion.button
+                  onClick={() => scrollToSection("contact")}
                   className="inline-flex items-center gap-2 px-5 py-2.5 mt-4 bg-primary text-primary-foreground rounded-xl text-sm font-medium hover:bg-primary/90 transition-colors w-fit mx-auto md:mx-0"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                 >
-                  <Download className="w-4 h-4" />
-                  Download Resume
-                </motion.a>
+                  <Mail className="w-4 h-4" />
+                  Get in Touch
+                </motion.button>
               </div>
             </div>
           </motion.div>
