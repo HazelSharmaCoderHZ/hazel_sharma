@@ -18,6 +18,7 @@ const Experience = () => {
       company: "Quantazone",
       period: "June 2026 - July 2026",
       location: "India",
+      status: "",
       description: "Managing ERP, CRM, and HRMS solutions using automation software.",
       skills: [
         "Zoho",
@@ -34,6 +35,7 @@ const Experience = () => {
       company: "Aarvasa",
       period: "January 2026 - May 2026",
       location: "India",
+      status: "",
       description: "Working as a frontend developer, building responsive and user-friendly web applications.",
       skills: [
         "React",
