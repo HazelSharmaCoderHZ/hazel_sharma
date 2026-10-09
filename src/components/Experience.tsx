@@ -2,13 +2,33 @@
 import { motion } from "framer-motion";
 import { Briefcase, Calendar, MapPin } from "lucide-react";
 
+type Role = {
+  title: string;
+  company: string;
+  period: string;
+  location: string;
+  status: string;
+  description: string;
+  skills: string[];
+};
+
 const Experience = () => {
-  const experiences = [
+  const experiences: Role[] = [
+    {
+      title: "Software Developer Engineer Intern",
+      company: "NatWest",
+      period: "Summer 2027",
+      location: "Bangalore, India",
+      status: "Upcoming",
+      description: "",
+      skills: []
+    },
     {
       title: "Technical Associate Intern",
       company: "Quantazone",
       period: "June 2026 - July 2026",
       location: "India",
+      status: "",
       description: "Managing ERP, CRM, and HRMS solutions using automation software.",
       skills: [
         "Zoho",
@@ -25,6 +45,7 @@ const Experience = () => {
       company: "Aarvasa",
       period: "January 2026 - May 2026",
       location: "India",
+      status: "",
       description: "Working as a frontend developer, building responsive and user-friendly web applications.",
       skills: [
         "React",
@@ -104,7 +125,14 @@ const Experience = () => {
                       <Briefcase className="w-5 h-5 text-primary" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-base sm:text-lg font-bold text-foreground">{exp.title}</h3>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <h3 className="text-base sm:text-lg font-bold text-foreground">{exp.title}</h3>
+                        {exp.status && (
+                          <span className="px-2 py-0.5 rounded-full text-[10px] font-mono uppercase tracking-wider bg-primary/15 text-primary border border-primary/30">
+                            {exp.status}
+                          </span>
+                        )}
+                      </div>
                       <p className="text-primary font-semibold">{exp.company}</p>
                       <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs sm:text-sm text-muted-foreground">
                         <span className="flex items-center gap-1.5">
@@ -116,17 +144,21 @@ const Experience = () => {
                           {exp.location}
                         </span>
                       </div>
-                      <p className="mt-3 text-muted-foreground text-sm">{exp.description}</p>
-                      <div className="flex flex-wrap gap-2 mt-4">
-                        {exp.skills.map((skill) => (
-                          <span
-                            key={skill}
-                            className="px-3 py-1 bg-primary/10 text-primary text-xs font-mono rounded-full border border-primary/20"
-                          >
-                            {skill}
-                          </span>
-                        ))}
-                      </div>
+                      {exp.description && (
+                        <p className="mt-3 text-muted-foreground text-sm">{exp.description}</p>
+                      )}
+                      {exp.skills.length > 0 && (
+                        <div className="flex flex-wrap gap-2 mt-4">
+                          {exp.skills.map((skill) => (
+                            <span
+                              key={skill}
+                              className="px-3 py-1 bg-primary/10 text-primary text-xs font-mono rounded-full border border-primary/20"
+                            >
+                              {skill}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </motion.div>
